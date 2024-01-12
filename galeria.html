@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/galeria.css">
+  <title>Home</title>
+</head>
+
+<body id="body">
+  <header class="cabeçalho">
+    <div class="superior">
+      <center>
+        <img src="images/Logo-PGB-1024x526.webp" alt="" class="logo">
+        <h1>Garotas Brilhantes</h1>
+      </center>
+    </div>
+    <div class="inferior">
+      <div class="canais">
+        <img src="images/icons8-facebook-novo-32.png" alt="">
+        <img src="images/icons8-instagram-32.png" alt="">
+        <img src="images/icons8-mais-zoom-32.png" alt="" class="lupa">
+        <img src="images/icons8-menos-zoom-32.png" alt="" class="lupa-">
+      </div>
+      <nav class="menu">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger" onclick="menu()">&#9776;</label>
+        <ul class="lista">
+          <li class="home" onclick="Rehome()">Home</li>
+          <li class="galeria" onclick="ReGaleria()">Galeria</li>
+          <li class="inscri" onclick="ReInscri()">Incrições</li>
+          <li class="apoiar" onclick="ReApoiar()">Apoiar</li>
+        </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="titulo">Galeria</h1>
+    <div class="carousel" data-carousel>
+      <div class="carousel-buttons">
+        <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+          <img src="images/icons8-flecha-96.png" alt="" class="bt">
+        </button>
+        <button class="carousel-button carousel-button_next" data-carousel-button-next>
+          <img src="images/icons8-flecha-96 (1).png" alt="" class="bt">
+        </button>
+      </div>
+      <div class="slides" data-carousel-slides-container>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <center>
+            <img src="images/gb1.jpg" alt="" class="fotos">
+          </center>
+          <div class="container">
+            <p class="texto">Visita/palestra ao parque com a instituição
+              Adra 03/02/2021</p>
+          </div>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <center>
+            <img src="images/gb2.jpg" alt="" class="fotos">
+          </center>
+          <div class="container">
+            <p class="texto">Pelestra sobre Prevenção 03/02/2021</p>
+          </div>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <center>
+            <img src="images/gb3.jpg" alt="" class="fotos">
+          </center>
+          <div class="container">
+            <p class="texto">Visita/palestra ao parque com a instituição
+              Adra 03/02/2021 2</p>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="rodapé">
+    <h1>Desenvolvido Por</h1>
+    <p class="p4">Luiz Gustavo Da Silva Moraes - Caroline Bendl - Cassio Goulart - Luan Tavares Dos Santos - Moisés
+      Andrades</p>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

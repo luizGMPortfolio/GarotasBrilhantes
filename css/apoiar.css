@@ -1,0 +1,253 @@
+*, *::before, *:after{margin: 0; padding: 0;box-sizing: border-box;-webkit-box-sizing: border-box;}
+
+body, html{
+    font-family: sans-serif;
+    font-size: inherit; 
+    background-color: #F15676;
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+/*inicio do cabeçalho*/
+.cabeçalho{
+    height: 190px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: #FDE3E3;
+}
+
+/*logo*/
+.superior{
+    height: 80%;
+}
+.logo{
+    width: 20%;
+    height: 90%;
+}
+h1{
+    font-size: 18px;
+    color: #A6043B;
+}
+/*caminhos*/
+.inferior{
+    height: 20%;
+    display: flex;
+}
+/*canais*/
+.canais{
+    width: 30%;
+    padding-left: 3%;
+}
+.lupa-, .lupa{
+    scale: 0.9;
+}
+.lupa{
+    margin-left: 5%;
+}
+/*menu bar*/
+.menu{
+    width: 70%;
+}
+.lista{
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: auto;
+    padding-right: 10px;
+}
+.home,.galeria,.inscri,.apoiar{
+    text-align: center;
+    width: 85px;
+    height: 36px;
+    padding: 3%;
+    margin: 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #E9999F;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.apoiar{
+    background-color: #F15676;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+/*fim do cabeçalho*/
+
+main{
+    display: grid;
+    height: 750px;
+}
+.titulo{
+    margin: auto;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+.imagem{
+    margin: auto;
+    padding: 40px;
+    background-color: #FDE3E3;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+}
+p{
+    margin: auto;
+    font-size: 20px;
+    color: #FDE3E3
+}
+.d1{
+    display: flex;
+    margin: auto;
+}
+h2{
+    margin: auto;
+    color: #A6043B;
+    font: 18px;
+}
+button{
+    margin-left: 10px;
+    height: 30px;
+    width: 60px;
+    background-color: #E9999F;
+    border: 3px solid #A6043B;
+    border-radius: 30px;
+    color: #A6043B;
+    font-size: 12px;
+}
+
+/*inicio Rodapé*/
+.rodapé{
+    height: 100px;
+    text-align: center;
+    padding: 1%;
+    background-color: #FDE3E3;
+    color: #A6043B;
+}
+.p4{
+    color: #A6043B;
+}
+/*fim rodapé*/
+
+
+/*Menu responsivo*/
+.menu-bar {
+    display: grid;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    z-index: 1;
+    background-color: #A6043B;
+    border-radius: 20px;
+}
+
+.list-bar {
+    margin: auto;
+    padding-top: 8%;
+    list-style-type: none;
+    display: block;
+    height: 250px;
+    width: 100%;
+}
+
+.l1,.l2,.l3,.l4 {
+    width: 100%;
+    height: 40px;
+    padding-top: 3%;
+    color: #FDE3E3;
+    border-radius: 10px;
+}
+.l4{
+    background-color: #E9999F;
+    color: #A6043B;
+}
+
+.hamburger1 {
+    padding-left: 56%;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+
+
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    /*cabeçalho*/
+    .cabeçalho {
+        height: 130px;
+    }
+
+    .superior {
+        height: 75%;
+    }
+
+    .inferior {
+        height: 25%;
+    }
+
+    .menu {
+        width: 20%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+    }
+
+    .canais {
+        width: 80%;
+    }
+
+    .lista {
+        display: none;
+    }
+
+    /*main*/
+    main{
+        padding: 5px;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .imagem{
+        height: 350px;
+        width: 350px;
+        padding: 4%;
+    }
+    .foto{
+        width: 100%;
+        height: 100%;
+    }
+    p{
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    input[type=checkbox]:checked~.menu-bar {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}   

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
+</head>
+<body id="body">
+    <header class="cabeçalho">
+        <div class="superior">
+            <center>
+                <img src="images/Logo-PGB-1024x526.webp" alt="" class="logo">
+                <h1>Garotas Brilhantes</h1>
+            </center>
+        </div>
+        <div class="inferior">
+            <div class="canais">
+                <img src="images/icons8-facebook-novo-32.png" alt="">
+                <img src="images/icons8-instagram-32.png" alt="">
+                <img src="images/icons8-mais-zoom-32.png" alt="" class="lupa">
+                <img src="images/icons8-menos-zoom-32.png" alt="" class="lupa-">
+            </div>
+            <nav class="menu">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger" onclick="menu()">&#9776;</label>
+                <ul class="lista">
+                    <li class="home" onclick="Rehome()">Home</li>
+                    <li class="galeria" onclick="ReGaleria()">Galeria</li>
+                    <li class="inscri" onclick="ReInscri()">Incrições</li>
+                    <li class="apoiar" onclick="ReApoiar()">Apoiar</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="sobre">
+            <h1 class="hs">SOBRE NÓS</h1>
+            <p class="p1">O projeto Garotas Brilhantes tem como objetivo 
+                alcançar meninas entre 14 a 17 anos promovendo ações 
+                socioeducativas entre garotas adolescentes que residem em 
+                várias cidades do Rio Grande do Sul.</p>
+            <p class="p1">A ideia do projeto é auxiliar, conversar, levar autoestima para garotas 
+                em situação de vulnerabilidade,
+                 questão social, poder aquisitivo mais baixo.</p>
+            <p class="p1"> Os encontros são uma vez por semana toda quarta-feira,
+                 abordando alguns assuntos como cuidados do corpo, beleza, gravidez, nutricionismo.</p>
+        </div>
+        <div class="novidades">
+            <h1 class="hs">Ultimas atualizações</h1>
+            <div class="blocos">
+                <div class="bloco">
+                    <div><img src="images/gb4 (1).jpg" alt="" class="fotos"></div>
+                    <p class="p4">Visita/palestra na rede RENNER
+                        dia 15/08/2023.</p>
+                </div>
+                <div class="bloco">
+                    <div><img src="images/gb5 (1).jpg" alt="" class="fotos"></div>
+                    <p class="p4">Palestra sobre autocuidado
+                        e psicologia dia 20/10/2023</p>
+                </div>
+                <div class="bloco">
+                    <div><img src="images/gb7 (2).jpg" alt="" class="fotos"></div>
+                    <p class="p4">Coordenadoras responsáveis 
+                        pela unidade Garotas Brilhantes
+                        Cachoeirinha RS</p>
+                </div>
+            </div>
+            <div>
+                <p class="p2">Para mais confira aqui: </p>
+                <button class="insta">Instagram</button>
+            </div>
+        </div>
+        <div class="locais">
+            <h2>Endereços:</h2>
+            <div class="place">
+                <ul class="esquerdo">
+                <li class="cidade">Cachoeirinha</li>
+                <li class="endereço">
+                    <p class="p3">E.E.E.M. Princesa Isabel |Rua Manata, 475 - Princesa Isabel</p>
+                    <p class="p3">Rua Manata, 475 - Princesa Isabel</p>
+                </li>
+                <li class="cidade">Gravatai</li>
+                <li class="endereço">
+                    <p class="p3">E.E.E.M. Tuiuti</p>
+                    <p class="p3">Avenida Borges de Medeiros 435, Vila Bonsucesso, Gravataí - RS</p>
+                    <p class="p3">E.E.E.M. Heitor Vila Lobos</p>
+                    <p class="p3">Rua Otelo Rosa, 118- Cohab C, Gravataí - RS</p>
+                    <p class="p3">Escola Estadual de Ensino Médio José Maurício</p>
+                    <p class="p3">Av. XV de Novembro, 64 - Vila São Geraldo</p>
+                </li>
+                <li class="cidade">Núcleo em Viamão</li>
+                <li class="endereço">
+                    <p class="p3">Rua Rezende, 25</p>
+                    <p class="p3">Jardim Universitário</p>
+                </li>
+                <li class="cidade">Rio Grande</li>
+                <li class="endereço">
+                    <p class="p3">Rua Rosa Cruz, 1043</p>
+                    <p class="p3">Bairro Hidraulica</p>
+                </li>
+                </ul>
+                <ul class="direito">
+                <li class="cidade">Novo Hamburgo</li>
+                <li class="endereço">
+                    <p class="p3">Praça da Juventude</p>
+                    <p class="p3">Rua. Honduras, 150 - Santo Afonso</p>
+                    <p class="p3">Núcleo em Passo Fundo</p>
+                    <p class="p3">Rua Sebastião de Rezende, 101</p>
+                    <p class="p3">Bairro Zachia</p>
+                </li>
+                <li class="cidade">Porto Alegre</li>
+                <li class="endereço">
+                    <p class="p3">EMEF Antônio Giúdice</p>
+                    <p class="p3">Rua Dr. Caio Brandão de Mello, 1 - Humaitá</p>
+                </li>
+                <li class="cidade">Taquara</li>
+                <li class="endereço">
+                    <p class="p3">Escola Municipal Cívico-Militar de Taquara</p>
+                    <p class="p3">Rua Cel. Flôres, 2358 - Centro</p>
+                </li>
+                <li class="cidade">Núcleo Em Alegrete</li>
+                <li class="endereço">
+                    <p class="p3">Rua Severino Ribeiro, 500</p>
+                    <p class="p3">Cidade Alta, Alegrete/RS</p> 
+                </li>
+                <li class="cidade">Canoas</li>
+                <li class="endereço">
+                    <p class="p3">E.E.E.M. Erico Verissimo</p>
+                    <p class="p3">Av. Boqueirão 1320, Canoas - RS</p>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="rodapé">
+        <h1>Desenvolvido Por</h1>
+        <p class="p5">Luiz Gustavo Da Silva Moraes - Caroline Bendl - Cassio Goulart - Luan Tavares Dos Santos - Moisés Andrades</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
